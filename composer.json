@@ -9,9 +9,43 @@
   "type": "project",
   "require": {
     "php": ">=7.1.3",
+    "ext-zlib": "*",
+    "ext-json": "*",
+    "ext-grpc": "*",
+    "ext-openssl": "*",
     "fideloper/proxy": "~4.0",
     "laravel/framework": "5.6.*",
-    "laravel/tinker": "~1.0"
+    "laravel/tinker": "~1.0",
+    "grpc/grpc": "~1.27",
+    "nette/mail": "~3.1",
+    "predis/predis": "~1.1",
+    "google/protobuf": "~3.12",
+    "guzzlehttp/guzzle": "~6.5",
+    "lcobucci/jwt": "~3.3",
+    "firebase/php-jwt": "~5.2",
+    "wangsucs/wcs-sdk-php": "~2.0",
+    "sensorsdata/sa-sdk-php": "~1.10",
+    "php-library/jwt": "dev-master",
+    "php-library/cors": "v1.0.1",
+    "php-library/qq-oauth": "dev-master",
+    "php-library/sign-in-apple": "dev-master",
+    "php-library/tencentcloud": "dev-master",
+    "php-library/wechat-web-oauth": "dev-master",
+    "go-public/fans-idl": "dev-master",
+    "go-public/gift-idl": "dev-master",
+    "go-public/gold-idl": "dev-master",
+    "go-public/prop-idl": "dev-master",
+    "go-public/rank-idl": "dev-master",
+    "go-public/tlog-sdk": "dev-master",
+    "go-public/medal-idl": "dev-master",
+    "go-public/follow-idl": "dev-master",
+    "go-public/silver-idl": "dev-master",
+    "go-public/history-idl": "dev-master",
+    "go-public/activity-idl": "dev-master",
+    "go-public/gamepkrank-idl": "dev-master",
+    "infra/lottery-sdk-php": "dev-master",
+    "infra/room-sdk-php": "dev-master",
+    "infra/user-sdk-php": "dev-master"
   },
   "require-dev": {
     "filp/whoops": "~2.0",
@@ -21,6 +55,96 @@
     "phpunit/phpunit": "~7.0",
     "symfony/thanks": "^1.0"
   },
+  "repositories": [
+    {
+      "url": "https://git.qietv.work/go-public/silver-idl.git",
+      "type": "git"
+    },
+    {
+      "url": "https://git.qietv.work/go-public/room-api.git",
+      "type": "git"
+    },
+    {
+      "url": "https://git.qietv.work/go-public/gift-idl.git",
+      "type": "git"
+    },
+    {
+      "url": "https://git.qietv.work/go-public/prop-idl.git",
+      "type": "git"
+    },
+    {
+      "url": "https://git.qietv.work/go-public/user-api.git",
+      "type": "git"
+    },
+    {
+      "url": "https://git.qietv.work/go-public/follow-idl.git",
+      "type": "git"
+    },
+    {
+      "url": "https://git.qietv.work/go-public/gold-idl.git",
+      "type": "git"
+    },
+    {
+      "url": "https://git.qietv.work/go-public/history-idl.git",
+      "type": "git"
+    },
+    {
+      "url": "https://git.qietv.work/go-public/rank-idl.git",
+      "type": "git"
+    },
+    {
+      "url": "https://git.qietv.work/Hanbin/douyu.git",
+      "type": "git"
+    },
+    {
+      "url": "https://git.qietv.work/go-public/medal-idl.git",
+      "type": "git"
+    },
+    {
+      "url": "https://git.qietv.work/go-public/tlog-sdk.git",
+      "type": "git"
+    },
+    {
+      "url": "https://git.qietv.work/go-public/lottery-api.git",
+      "type": "git"
+    },
+    {
+      "url": "https://git.qietv.work/go-public/fans-idl.git",
+      "type": "git"
+    },
+    {
+      "url": "https://git.qietv.work/go-public/gamepkrank-idl.git",
+      "type": "git"
+    },
+    {
+      "url": "https://git.qietv.work/go-public/activity-idl.git",
+      "type": "git"
+    },
+    {
+      "url": "https://git.qietv.work/php-library/sign-in-apple.git",
+      "type": "git"
+    },
+    {
+      "url": "https://git.qietv.work/php-library/qq-oauth.git",
+      "type": "git"
+    },
+    {
+      "url": "https://git.qietv.work/php-library/webchat-web-oauth.git",
+      "type": "git"
+    },
+    {
+      "url": "https://git.qietv.work/php-library/tencentcloud.git",
+      "type": "git"
+    },
+    {
+      "url": "https://git.qietv.work/php-library/cors.git",
+      "type": "git"
+    },
+    {
+      "url": "https://git.qietv.work/php-library/jwt.git",
+      "type": "git"
+    }
+  ],
   "autoload": {
     "classmap": [
       "database/seeds",
